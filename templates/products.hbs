@@ -5,132 +5,24 @@
 				<div class="carousel-inner">
 					<div class="item active">
 						<a href="#">
-						<img alt="" src="img/Battle_Droid.png" /></a>
+						<img alt="" src="img/logo.png" /></a>
 						<div class="carousel-caption">
-							<h4>
-								Battle Droid
-							</h4>
-							<p>
-                A
-							</p>
 						</div>
 					</div>
-					<div class="item">
-						<a href="#">
-						<img alt="" src="img/C-3PO_droid.png" /></a>
-						<div class="carousel-caption">
-							<h4>
-								C-3PO
-							</h4>
-							<p>
-								placeholder
-							</p>
+					{{#each}}
+						<div class="item">
+							{{#link-to 'product' this.id}}<img src={{image}}>{{/link-to}}
+							<div class="carousel-caption">
+								<h4>
+									{{title}}
+								</h4>
+								<p>
+									{{description}}
+								</p>
+							</div>
 						</div>
-					</div>
-					<div class="item">
-						<a href="#">
+					{{/each}}
 
-						<img alt="" src="img/han-blaster.png" /></a>
-						<div class="carousel-caption">
-							<h4>
-								Han Solo's Blaster
-							</h4>
-							<p>
-								placeholder
-							</p>
-						</div>
-					</div>
-          <div class="item">
-						<a href="#">
-
-            <img alt="" src="img/lukesaber.jpg" /></a>
-            <div class="carousel-caption">
-              <h4>
-                Luke Skywalker's Lightsaber
-              </h4>
-              <p>
-								placeholder
-              </p>
-            </div>
-          </div>
-					<div class="item">
-						<a href="#">
-
-						<img alt="" src="img/maulsaber.jpg" /></a>
-						<div class="carousel-caption">
-							<h4>
-								Darth Maul's Lightsaber
-							</h4>
-							<p>
-								placeholder
-							</p>
-						</div>
-					</div>
-					<div class="item">
-						<a href="#">
-
-						<img alt="" src="img/millenium.png" /></a>
-						<div class="carousel-caption">
-							<h4>
-								Millenium Falcon Starship
-							</h4>
-							<p>
-								placeholder
-							</p>
-						</div>
-					</div>
-					<div class="item">
-						<a href="#">
-
-						<img alt="" src="img/mkII.jpg" /></a>
-						<div class="carousel-caption">
-							<h4>
-								Mark 2 Blaster
-							</h4>
-							<p>
-								placeholder
-							</p>
-						</div>
-					</div>
-					<div class="item">
-						<a href="#">
-
-						<img alt="" src="img/pitdroid.png" /></a>
-						<div class="carousel-caption">
-							<h4>
-								Pit Doid
-							</h4>
-							<p>
-								placeholder
-							</p>
-						</div>
-					</div>
-					<div class="item">
-						<a href="#">
-
-						<img alt="" src="img/r2d2.png" /></a>
-						<div class="carousel-caption">
-							<h4>
-								R2D2
-							</h4>
-							<p>
-								placeholder
-							</p>
-						</div>
-					</div>
-					<div class="item">
-						<a href="#">
-
-						<img alt="" src="img/starfighter.png" /></a>
-						<div class="carousel-caption">
-							<h4>
-								Empire Star Fighter
-							</h4>
-							<p>
-								placeholder
-							</p>
-						</div>
-					</div>
 				</div> <a class="left carousel-control" href="#carousel-74374" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a> <a class="right carousel-control" href="#carousel-74374" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
 			</div>
 			<br>
