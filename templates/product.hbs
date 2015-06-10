@@ -1,0 +1,54 @@
+<div class="row clearfix">
+		<div class="col-md-8 column">
+			<img alt="140x140" src="{{image}}" class="img-responsive" />
+		</div>
+		<div class="col-md-4 column">
+			<h3>
+			<strong>Title: </strong>	{{title}}
+			</h3>
+			<ul>
+        <li>
+          <strong>Item #: </strong>{{id}}
+        </li>
+				<li>
+					<strong>Owner: </strong>{{owner}}
+				</li>
+				<li>
+					<strong>Year Acquired: </strong>{{year}}
+				</li>
+				<li>
+					<strong>Estimated Starting Price: </strong>{{price}}
+				</li>
+				<li>
+					<strong>Condition: </strong>{{condition}}
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="row clearfix">
+		<div class="col-md-12 column">
+			<div class="panel-group" id="panel-629401">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						 <a class="panel-title collapsed" data-toggle="collapse" data-parent="#panel-629401" href="#panel-element-180798">Description</a>
+					</div>
+					<div id="panel-element-180798" class="panel-collapse collapse">
+						<div class="panel-body">
+							{{description}}
+						</div>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						 <a class="panel-title collapsed" data-toggle="collapse" data-parent="#panel-629401" href="#panel-element-747141">Backstory</a>
+					</div>
+					<div id="panel-element-747141" class="panel-collapse collapse">
+						<div class="panel-body">
+							{{backstory}}
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+  <button type="button" class="btn btn-block btn-warning" {{action 'delete'}}>Remove Item from Auction</button>

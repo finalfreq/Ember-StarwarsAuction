@@ -1,4 +1,4 @@
-Torhus.Products = Ember.Route.extend ({
+Torhus.ProductsRoute = Ember.Route.extend ({
   model: function() {
     return this.store.find('product')
   }
