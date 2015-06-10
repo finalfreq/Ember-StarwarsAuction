@@ -1,0 +1,1 @@
+Torhus = Ember.Application.create();
