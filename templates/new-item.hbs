@@ -1,0 +1,44 @@
+<form>
+  <div class="well form-group">
+    <label for="title">Title</label>
+    {{input id="title" class="form-control" value=title}}
+  </div>
+
+  <div class="well form-group">
+    <label for="title">Owner</label>
+    {{input id="owner" class="form-control" value=owner}}
+  </div>
+
+  <div class="well form-group">
+    <label for="year">Year Acquired</label>
+    {{input id="year" class="form-control" value=year}}
+  </div>
+
+  <div class="well form-group">
+    <label for="price">Estimated Starting Price</label>
+    {{input id="price" class="form-control" value=price}}
+  </div>
+
+  <div class="well form-group">
+    <label for="condition">Condition</label>
+    {{input id="condition" class="form-control" value=condition}}
+  </div>
+
+  <div class="well form-group">
+    <label for="description">Description</label>
+    {{textarea id="description" class="form-control" rows="5" value=description}}
+  </div>
+
+  <div class="well form-group">
+    <label for="backstory">Backstory</label>
+    {{textarea id="backstory" class="form-control" rows="10" value=backstory}}
+  </div>
+
+  <div class="well form-group">
+    <label for="image">Image URL</label>
+    {{input id="image" class="form-control" value=image}}
+  </div>
+
+
+  <button class="btn btn-primary"  {{action 'save'}}>Save</button>
+</form>

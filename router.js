@@ -1,4 +1,4 @@
 Torhus.Router.map(function() {
-  this.resource('catalog', {path:'/'});
+  this.resource('products', {path:'/'});
+  this.resource('new-item');
 });
-  
