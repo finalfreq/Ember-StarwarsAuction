@@ -1,3 +1,73 @@
-{{#each}}
-    {{#link-to 'auction' this.id}}{{name}}{{/link-to}}
-{{/each}}
+<h1 class="page-header text-center">{{name}}</h1>
+<div class="row clearfix">
+    <div class="col-md-12 column">
+      <div class="carousel slide" id="carousel-74374">
+        <div class="carousel-inner">
+          <div class="item active">
+            <a href="#">
+            <img alt="" src="img/starbaylogo.png" /></a>
+            <div class="carousel-caption">
+            </div>
+          </div>
+          {{#each}}
+            <div class="item">
+              {{#link-to 'auction' this.id}}<img src={{products.firstObject.image}}>{{/link-to}}
+              <div class="carousel-caption">
+                <h4 style="color: black;">
+                  {{name}}
+                </h4>
+                <p>
+                  {{description}}
+                </p>
+              </div>
+            </div>
+          {{/each}}
+
+         </div> <a class="left carousel-control" href="#carousel-74374" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a> <a class="right carousel-control" href="#carousel-74374" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+      </div>
+      <br>
+      {{#link-to 'new-auction' class="btn btn-block btn-info" }}Add Auction{{/link-to}}
+    </div>
+  </div>
+
+<div class="row clearfix">
+  <div class="col-md-12 column">
+    <br>
+       {{#each}}
+        <div class="row clearfix">
+          <div class="col-md-6 column">
+            <!-- <p class = "lead" id="auctionname">{{auctions.name}}</p> -->
+            <p class="lead">
+              <strong>Item #:</strong> {{id}}
+            </p>
+
+
+            <h2><strong>{{#link-to 'auction' this.id}}{{name}}{{/link-to}}</strong></h2>
+            <img class="thumbnail" src="{{products.firstObject.image}}">
+          </div>
+          <div class="col-md-6 column">
+            <ul id="product-info">
+              <li>
+                <strong>Contact: </strong> {{curator}}
+              </li>
+              <li>
+                <strong>{{date}}</strong> {{price}}
+              </li>
+
+              <li>
+                <strong>Location:</strong> {{location}}
+              </li>
+              <li>
+                <strong>Description:</strong> {{description}}
+              </li>
+            </ul>
+          </div>
+        </div>
+      {{/each}}
+
+
+      {{#each products}}
+        {{name}}
+      {{/each}}
+  </div>
+</div>
