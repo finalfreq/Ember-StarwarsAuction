@@ -1,4 +1,5 @@
 Torhus.NewItemController = Ember.Controller.extend({
+  needs: ['auction'],
   actions: {
     save: function() {
       var newItem = this.store.createRecord('product', {
@@ -11,8 +12,12 @@ Torhus.NewItemController = Ember.Controller.extend({
         backstory: this.get('backstory'),
         image: this.get('image')
       });
-        newItem.save()
-        this.transitionToRoute('products');
+      newItem.save();
+      var auction = this.get('controllers.auction.model');
+      this.set('addItem', false);
+      auction.get('products').pushObject(newItem);
+      auction.save();
+        this.transitionToRoute('auction', auction.id);
         this.set('title', " "),
         this.set('owner', " "),
         this.set('year', " "),
