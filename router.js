@@ -5,4 +5,5 @@ Torhus.Router.map(function() {
   this.resource('auction', {path:'auctions/:auction_id'});
   this.resource('new-item', {path:'auctions/:auction_id/new-item'});
   this.resource('new-auction');
+
 });
