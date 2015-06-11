@@ -16,3 +16,10 @@ body {
   font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
 
 }
+
+
+
+.item img {
+  *max-height: 474px;*/
+
+}

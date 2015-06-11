@@ -6,5 +6,6 @@ Torhus.Product = DS.Model.extend({
   condition: DS.attr(),
   description: DS.attr(),
   backstory: DS.attr(),
-  image: DS.attr()
+  image: DS.attr(),
+  auctions: DS.belongsTo('auction')
 });

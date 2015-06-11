@@ -1,0 +1,27 @@
+<form>
+  <div class="well form-group">
+    <label for="name">Name</label>
+    {{input id="name" class="form-control" value=name}}
+  </div>
+
+  <div class="well form-group">
+    <label for="date">Date</label>
+    {{input id="date" class="form-control" value=date}}
+  </div>
+
+  <div class="well form-group">
+    <label for="location">Location</label>
+    {{input id="location" class="form-control" value=location}}
+  </div>
+
+  <div class="well form-group">
+    <label for="description">Description</label>
+    {{input id="description" class="form-control" value=description}}
+  </div>
+
+  <div class="well form-group">
+    <label for="curator">Curator</label>
+    {{textarea id="curator" class="form-control" rows="5" value=curator}}
+  </div>
+  <button class="btn btn-primary"  {{action 'save'}}>Save</button>
+</form>
