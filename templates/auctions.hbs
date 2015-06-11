@@ -1,4 +1,4 @@
-<h1 class="page-header text-center">{{name}}</h1>
+<h4 class="page-header text-center">{{name}}</h4>
 <div class="row clearfix">
     <div class="col-md-12 column">
       <div class="carousel slide" id="carousel-74374">
@@ -34,15 +34,14 @@
   <div class="col-md-12 column">
     <br>
        {{#each}}
-        <div class="row clearfix">
+        <div class="well row clearfix">
           <div class="col-md-6 column">
-            <!-- <p class = "lead" id="auctionname">{{auctions.name}}</p> -->
             <p class="lead">
               <strong>Item #:</strong> {{id}}
             </p>
 
 
-            <h2><strong>{{#link-to 'auction' this.id}}{{name}}{{/link-to}}</strong></h2>
+            <h4><strong>{{#link-to 'auction' this.id}}{{name}}{{/link-to}}</strong></h4>
             <img class="thumbnail" src="{{products.firstObject.image}}">
           </div>
           <div class="col-md-6 column">

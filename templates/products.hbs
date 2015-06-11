@@ -1,40 +1,12 @@
 <h1 class="page-header text-center">Master Item List</h1>
-<div class="row clearfix">
-		<div class="col-md-12 column">
-			<div class="carousel slide" id="carousel-74374">
-				<div class="carousel-inner">
-					<div class="item active">
-						<a href="#">
-						<img alt="" src="img/starbaylogo.png" /></a>
-						<div class="carousel-caption">
-						</div>
-					</div>
-					{{#each}}
-						<div class="item">
-							{{#link-to 'product' this.id}}<img src={{image}}>{{/link-to}}
-							<div class="carousel-caption">
-								<h4>
-									{{title}}
-								</h4>
-								<p>
-									{{description}}
-								</p>
-							</div>
-						</div>
-					{{/each}}
-
-				</div> <a class="left carousel-control" href="#carousel-74374" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a> <a class="right carousel-control" href="#carousel-74374" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
-			</div>
-			<br>
-			{{#link-to 'new-item' classNames="btn btn-block btn-info"}}Add Auction Item{{/link-to}}
-		</div>
-	</div>
 
 <div class="row clearfix">
 	<div class="col-md-12 column">
 		<br>
 			{{#each}}
 				<div class="well row clearfix">
+					<h5 class="text-center">{{auctions.name}}</h5>
+
 					<div class="col-md-4 column">
 						<a id="modal-920893" href="#modal-container-920893" data-toggle="modal"><img src="{{image}}" class="thumbnail" /></a>
 
@@ -74,6 +46,7 @@
 					<div class="col-md-4 column">
 						<p class="lead">
 							<strong>Item #:</strong> {{id}}
+
 						</p>
 						<h2><strong>{{#link-to 'product' this.id}}{{title}}{{/link-to}}</strong></h2>
 					</div>

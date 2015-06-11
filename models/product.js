@@ -7,5 +7,5 @@ Torhus.Product = DS.Model.extend({
   description: DS.attr(),
   backstory: DS.attr(),
   image: DS.attr(),
-  auctions: DS.belongsTo('auction',{async:true})
+  auctions: DS.belongsTo('auction', {async:true})
 });
